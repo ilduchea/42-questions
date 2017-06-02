@@ -1,1 +1,13 @@
-{{outlet}}
+<div class="row">
+  <div class="col-md-6">
+    <h2>Questions</h2>
+    <div class="well">
+      {{#each model.questions as |question|}}
+      {{list-question question=question}}
+      {{/each}}
+    </div>
+  </div>
+  <div class="col-md-6">
+    {{new-question model=model saveQuestion="saveQuestion"}}
+  </div>
+</div>
