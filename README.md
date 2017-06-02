@@ -70,12 +70,13 @@ You will need the following things properly installed on your computer.
     * Component/html tile for listing questions as links.
     * Component/html form for creating a question.
   * Template/html page for questions/dynamic.
-    * Component/html tile for answers.
+    * Component/html tile for displaying answers.
+    * Component/html tile for creating an answer.
     * Component/html form for answering the question.
     * Component/html form for updating the question.
     * Component/html form for updating the answer.    
-  * Template/html page for about
-  * Template/html page for contact
+  * Template/html page for about. ?future
+  * Template/html page for contact. ?future
 
 4. UX/UI
   * Include and modify bootstrap/materialize/Sass etc.
