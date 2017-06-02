@@ -1,0 +1,65 @@
+body {
+  background: #020202;
+  font-size: 16px;
+  color: #058C42;
+}
+
+.jumbotron {
+  background: #058C42;
+  color: #020202;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #058C42;
+}
+
+.btn, button, input, textarea {
+  background: #058C42;
+  color: #020202;
+  margin-bottom: 10px;
+}
+
+.btn:hover, button:hover, .navbar a:hover {
+  background: #0D2818;
+  color: #16DB65;
+}
+
+input, .well, textarea {
+  border-color: #16DB65;
+}
+
+.well {
+  background: #058C42;
+}
+
+.well .well {
+  background: #020202;
+}
+
+.well .well a {
+  color: #058C42;
+}
+
+.panel {
+  border-color: #058C42;
+}
+
+.panel-body {
+  background: #0D2818;
+  color: #16DB65;
+}
+
+.panel-heading {
+  background: #058C42;
+  color: #020202;
+}
+
+.notes {
+  vertical-align: top;
+}
+
+textarea {
+  min-height: 100px;
+  width: 40%;
+}

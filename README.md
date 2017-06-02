@@ -98,7 +98,7 @@ You will need the following things properly installed on your computer.
 * `ember build --environment production` (production)
 
 ### Known Bugs
-No known bugs at this time
+If you click on an update input field but do not enter any info it will erase the field when saved.
 
 ## Support and Contact details
 * Tyler Stephenson
