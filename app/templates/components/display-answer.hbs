@@ -1,1 +1,18 @@
-{{yield}}
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {{answer.author}} on {{answer.created}}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <p>{{answer.answer}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    {{update-answer answer=answer params=params updateAnswer="updateAnswer"}}
+    <button {{action 'deleteAnswer' answer}}>Delete Answer</button>
+  </div>
+</div>

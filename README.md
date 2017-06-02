@@ -45,11 +45,11 @@ You will need the following things properly installed on your computer.
     * Created
     * Belongs to question.
   * Question methods.
-    * Save *
+    * Save
     * Update
-    * Delete *
-    * Find all questions *
-    * Find a given question *
+    * Delete
+    * Find all questions
+    * Find a given question
   * Answer methods.
     * Save
     * Update

@@ -1,1 +1,18 @@
-{{yield}}
+{{#if addNewAnswer}}
+<h1>New Answer</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Name:</label>
+        {{input value=author id="answerName"}}
+      </div>
+      <div class="form-group">
+        <label for="answer">Answer:</label>
+        {{textarea value=answer id="answerAnswer"}}
+      </div>
+      <button {{action 'saveAnswer' model}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'answerFormShow'}}>Answer</button>
+{{/if}}
