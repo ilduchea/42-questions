@@ -1,0 +1,6 @@
+{
+  "name": "ask-me-anything",
+  "dependencies": {
+    "firebase": "^4.1.1"
+  }
+}

@@ -31,30 +31,30 @@ You will need the following things properly installed on your computer.
 
 1. Configuration/dependencies
   * Use firebase for the database.
+  * Use Bootstrap for base styling.
+  * Use ember-moment to create a timestamp when a question or answer is created.
   * Question model.
     * Author
     * Question
     * Notes
     * Created
     * Has many answers.
+  * Answer model.
+    * Author
+    * Answer
+    * Created
+    * Belongs to question.
   * Question methods.
     * Save
     * Update
     * Delete
     * Find all questions
     * Find a given question
-  * Answer model.
-    * Author
-    * Answer
-    * Created
-    * Belongs to question.
   * Answer methods.
     * Save
     * Update
     * Delete
     * Find all answers to a given question
-  * Use Bootstrap for base styling.
-  * Use ember-moment to create a timestamp when a question or answer is created.
 
 2. Specs
   * Questions should include the content of the question itself, an author, and additional notes.
@@ -106,6 +106,7 @@ No known bugs at this time
 ### Technologies Used
 
 * Ember
+* Firebase
 * HTML5
 * CSS
 * Bootstrap
