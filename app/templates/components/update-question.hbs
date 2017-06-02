@@ -1,1 +1,20 @@
-{{yield}}
+{{#if showUpdateForm}}
+  <form>
+    <h2>Update Question</h2>
+    <div>
+      <label for="question">Question:</label>
+      {{input value=question id='updateQuestion' placeholder=model.question.question}}
+    </div>
+    <div>
+      <label for="notes">Notes:</label>
+      {{textarea value=notes id='updateNotes' placeholder=model.question.notes}}
+    </div>
+    <div>
+      <label for="author">Name:</label>
+      {{input value=author id='updateAuthor' placeholder=model.question.author}}
+    </div>
+    <button {{action 'updateQuestion' model.question}}>Update</button>
+  </form>
+{{else}}
+  <button {{action 'showUpdateForm'}}>Update</button>
+{{/if}}

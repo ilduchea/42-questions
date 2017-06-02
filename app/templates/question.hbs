@@ -1,20 +1,26 @@
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title">
-      {{model.question.question}}
-    </h3>
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          {{model.question.question}}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <p></p>
+        <p>{{model.question.notes}}</p>
+        <p class="footer">asked by:
+          {{model.question.author}} on
+          {{model.question.created}}
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="panel-body">
-    <p></p>
-    <p>{{model.question.notes}}</p>
-    <p class="footer">asked by:
-      {{model.question.author}} on
-      {{model.question.created}}
-    </p>
+  <div class="col-md-6">
+    {{update-question model=model parms=params updateQuestion="updateQuestion"}}
+    <button {{action 'deleteQuestion' model.question}}>Delete</button>
   </div>
 </div>
-<button {{action 'deleteQuestion' model.question}}>Delete</button>
-{{update-question model=model parms=params updateQuestion="updateQuestion"}}
 <hr>
 {{new-answer saveAnswer="saveAnswer" model=model}}
 {{#each model.question.answers as |answer|}}
