@@ -13,8 +13,8 @@
       <label for="author">Name:</label>
       {{input value=author id='updateAuthor' placeholder=model.question.author}}
     </div>
-    <button {{action 'updateQuestion' model.question}}>Update</button>
+    <button class="btn" {{action 'updateQuestion' model.question}}>Update</button>
   </form>
 {{else}}
-  <button {{action 'showUpdateForm'}}>Update</button>
+  <button class="btn" {{action 'showUpdateForm'}}>Update</button>
 {{/if}}

@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         question: this.get('question'),
-        notes: this.get('notes'),
+        notes: this.get('notes') ? this.get('notes') : "",
         created: moment().format('MMMM Do YYYY, h:mm:ss a')
       };
       this.set('addNewQuestion', false);

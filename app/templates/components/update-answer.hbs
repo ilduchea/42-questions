@@ -9,8 +9,8 @@
       <label for="answer">Answer:</label>
       {{textarea value=answer1 id='updateAnswer' placeholder=answer.answer}}
     </div>
-    <button {{action 'updateAnswer' answer}}>Update</button>
+    <button class="btn" {{action 'updateAnswer' answer}}>Update</button>
   </form>
 {{else}}
-  <button {{action 'showUpdateForm'}}>Update</button>
+  <button class="btn" {{action 'showUpdateForm'}}>Update</button>
 {{/if}}

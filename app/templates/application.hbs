@@ -2,8 +2,16 @@
   <div class="jumbotron">
     <h1>42 Questions</h1>
   </div>
-  <nav>
-    {{#link-to 'index'}}Home{{/link-to}}
+  <nav class="navbar">
+    <button class="btn" type="button">
+      {{#link-to 'index'}}Home{{/link-to}}
+    </button>
+    <button class="btn" type="button">
+      {{#link-to 'about'}}About{{/link-to}}
+    </button>
+    <a href="https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy">
+      <button class="btn" type="button">42</button>
+    </a>
   </nav>
   {{outlet}}
 </div>
