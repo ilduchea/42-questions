@@ -9,12 +9,12 @@
           {{input value=author id='author'}}
         </div>
         <div>
-          <label for="question">Question:</label>
+          <label for="question" class="notes">Question:</label>
           {{textarea value=question id='question'}}
         </div>
         <div>
           <label for="notes" class="notes">Notes:</label>
-          {{input value=notes id='notes'}}
+          {{textarea value=notes id='notes'}}
         </div>
         <button class="btn" {{action 'saveQuestion'}}>Save</button>
       </form>

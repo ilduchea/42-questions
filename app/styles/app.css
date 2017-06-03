@@ -63,3 +63,8 @@ textarea {
   min-height: 100px;
   width: 40%;
 }
+
+input::placeholder,
+textarea::placeholder {
+  color: #020202;
+}
