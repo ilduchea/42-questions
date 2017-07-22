@@ -1,4 +1,4 @@
-# ask-me-anything
+# 42 Questions
 
 ## Description
 
